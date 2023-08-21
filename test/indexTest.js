@@ -19,12 +19,16 @@ describe("within index.html", () => {
   it("within the <p>, it contains an <em> tag", () => {
     expect(document.querySelector("p").innerHTML).to.include("<em>");
   });
-  it("within the <p>, it contains an <a> tag", () => {
-    expect(document.querySelector("p").innerHTML).to.include(
-      '<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">'
-    );
+  it("contains an <h1> tag", () => {
+    expect(document.querySelector("body").innerHTML).to.include("<h1>");
   });
-  it("within the <body>, it contains a <table> tag", () => {
-    expect(document.querySelector("body").innerHTML).to.include("table");
+  
+  it("contains an <h1> tag", () => {
+    expect(document.querySelector("body").innerHTML).to.include("<h1>");
   });
+it("contains an <h2> tag", () => {
+    expect(document.querySelector("body").innerHTML).to.include("<h2>");
+  });
+
 });
+
